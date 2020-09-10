@@ -15,10 +15,10 @@ import (
 	"golang.org/x/sys/windows"
 	"golang.org/x/sys/windows/registry"
 
-	"golang.zx2c4.com/wireguard/tun/wintun/iphlpapi"
-	"golang.zx2c4.com/wireguard/tun/wintun/nci"
-	registryEx "golang.zx2c4.com/wireguard/tun/wintun/registry"
-	"golang.zx2c4.com/wireguard/tun/wintun/setupapi"
+	"github.com/cyberscaling/wireguard/tun/wintun/iphlpapi"
+	"github.com/cyberscaling/wireguard/tun/wintun/nci"
+	registryEx "github.com/cyberscaling/wireguard/tun/wintun/registry"
+	"github.com/cyberscaling/wireguard/tun/wintun/setupapi"
 )
 
 type Pool string
