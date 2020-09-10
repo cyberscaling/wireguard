@@ -409,6 +409,7 @@ func (device *Device) SendKeepalivesToPeersWithCurrentKeypair() {
 		peer.keypairs.RLock()
 		sendKeepalive := peer.keypairs.current != nil && !peer.keypairs.current.created.Add(RejectAfterTime).Before(time.Now())
 		peer.keypairs.RUnlock()
+		device.log.Debug.Println("my handshake")
 		if sendKeepalive {
 			peer.SendKeepalive()
 		}
